@@ -4,8 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
+body {
+  background: #050F1F;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
 ul, nav, li, a {
     text-decoration: none;
     color: #000;
@@ -17,9 +21,14 @@ ul, nav, li, a {
 }
 
 
+a {
+  color: #fff;
+  font-weight: bold;
+}
+
 a:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #202e5a;
     border-radius: 5px;
     transition: linear 0.5s ;
 }
@@ -27,53 +36,41 @@ a:hover {
 /**Projets**/
 
 .Projet {
-    display: flex;
-    width: 100%;
-    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 20px;
 }
 
 .projet_div_image {
     width: 100%;
 }
 
-.projet_image_genet21 {
+.projet_image_global {
     background-color: #000;
     padding: 10px;
     border-radius: 15px;
     margin: 15px;
-    width: 30%;
+    width: 95%;
+}
+
+.projet_image_global:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.1);
 }
 
 
+h3 {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    gap: 15px;
+}
 
-/**Wave animation css**/
 
-
-.wave {
-    opacity: .4;
-    position: absolute;
-    z-index: -2;
-    top: 3%;
-    background: #0af;
-    width: 80%;
-    height: 100%;
-    margin-top: 25px;
-    border-radius: 43%;
-    animation: drift 8000ms infinite linear;
-  }
-  
-  .wave.-three {
-    animation: drift 9000ms infinite linear;
-  }
-  
-  .wave.-two {
-    animation: drift 7000ms infinite linear;
-    opacity: .1;
-    background: rgb(98, 179, 255);
-  }
-  
-  
-  @keyframes drift {
-    from { transform: rotate(0deg); }
-    from { transform: rotate(180deg); }
-  }
