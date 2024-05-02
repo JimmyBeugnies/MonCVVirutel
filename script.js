@@ -6,3 +6,15 @@
   }, 7000); // 7 secondes
 });
  */
+
+function windowTab(url) {
+  window.open(url, '_blank');
+}
+
+
+document.getElementById("myForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var responseContainer = document.getElementById("response");
+});

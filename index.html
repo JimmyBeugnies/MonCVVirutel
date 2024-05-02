@@ -10,7 +10,6 @@
       <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">Mes projets</a></li>
         <li><a href="#">Mes expériences</a></li>
         <li><a href="#">Mon CV papier</a></li>
         <li><a href="#">Me contacter</a></li>
@@ -28,44 +27,49 @@
       <div class="loader-square"></div>
       <div class="loader-square"></div>
       </div> -->
-    <section class="Projet hidden" >
-      <div class="projet_div_image">
-        <img
-          class="projet_image_global"
-          src="./assets/images/genet21.PNG"
-          alt="Genet 21"
-        />
-        <h3>Projet Backend/Frontend</h3>
+    <section class="experience hidden">
+      <div class="exp_div">
+        <img src="./assets/images/genet21.PNG" class="exp_image_global">
+        <h3>Application web Genet 21. [2022]</h3>
       </div>
-      <div class="projet_div_image">
-        <img
-          class="projet_image_global"
-          src="./assets/images/ohmyfood.PNG"
-          alt="ohmyfood"
-        />
-        <h3>Ajustement / création animations CSS3</h3>
+      <div class="exp_div">
+        <img src="./assets/images/afpa.png" class="exp_image_global">
+        <h3>Application Frontend/backend Afpa. [2022]</h3>
       </div>
-      <div class="projet_div_image">
-        <img
-          class="projet_image_global"
-          src="./assets/images/prinit.PNG"
-          alt="Print It"
-        />
-        <h3>Mise en place carousel JS</h3>
+      <div class="exp_div">
+        <img src="./assets/images/Capture.PNG" class="exp_image_global">
+        <h3>Application Frontend SwordArtOnline. [2024]</h3>
       </div>
-      <div class="projet_div_image">
-        <img
-          class="projet_image_global"
-          src="./assets/images/nina.PNG"
-          alt="Nina Carducci"
-        />
-        <h3>Optimisation structure HTML / Images / Référencement CEO</h3>
+      <div class="exp_div">
+        <img src="./assets/images/Jpeg.jpg" class="exp_image_global">
+        <h3>Application Frontend ShinobiSaga. [2024]</h3>
+      </div>
+      <div class="exp_div">
+        <img src="./assets/images/C1apture.PNG" class="exp_image_global">
+        <h3>Intégration maquette Frontend Booki. [2024]</h3>
+      </div>
+      <div class="exp_div">
+        <img src="./assets/images/e.PNG" class="exp_image_global">
+        <h3>Animation CSS3 Frontend OhMyFood. [2024]</h3>
       </div>
     </section>
     <hr>
-    <section class="experience hidden">
+    <button class="cvpapier" onclick="windowTab('http://127.0.0.1:5500/assets/images/Jimmy%20BeugnieS%20(2).pdf')">Mon CV Papier</button>
+    <hr>
 
+    <section class="formulaire hidden">
+      <div class="container">
+        <form id="myForm">
+          <label for="name">Nom:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="response"></div>
+      </div>
     </section>
+    
     <script src="./script.js"></script>
   </body>
 </html>
